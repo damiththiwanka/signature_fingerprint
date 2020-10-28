@@ -1,6 +1,6 @@
 name: signaturefingerprint
 description: A new flutter plugin project.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ThusharaUC/signature_fingerprint.git
 
 environment:
