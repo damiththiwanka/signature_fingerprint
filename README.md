@@ -1,15 +1,40 @@
 # Signature Fingerprint
 
-A new flutter plugin project.
+Get the fingerprint signature of your app's certificate.
+
+Especially useful for adding yet another layer of security in your API calls.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+**Use**
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Add this to your package's pubspec.yaml file 
+```yaml
+dependencies:
+  signaturefingerprint: ^1.0.0
+```
+2. Install it
+```shell script
+$ flutter pub get
+```
+3. Import it
+```dart
+import 'package:signaturefingerprint/signaturefingerprint.dart';
+```
 
+4. Use it
+```dart
+
+String androidFingerprint = await Signaturefingerprint.getSignatureFingerprint();
+```
+
+### Platform Support
+
+OS |
+-- |
+Android |
+
+License
+----
+
+MIT
